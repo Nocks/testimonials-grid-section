@@ -49,10 +49,14 @@ input:focus {
   flex-direction: column;
   padding: 6em 1.5em 1em 1.5em;
 }
+.container__inner-second {
+  margin-top: 0;
+}
 
 .testimonial-card {
   padding: 1.5em;
   border-radius: 0.8em;
+  margin-bottom: 25px;
 }
 .testimonial-card__profile {
   display: flex;
@@ -148,6 +152,7 @@ input:focus {
 }
 .testimonial-card--fourth {
   background-color: #19212e;
+  margin-bottom: 0;
 }
 .testimonial-card--fourth .photo img {
   border: 2px solid #7541c8;
@@ -166,6 +171,8 @@ input:focus {
 }
 .testimonial-card--fifth {
   background-color: white;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 .testimonial-card--fifth .photo img {
   border: 2px solid rgba(207, 207, 207, 0.5);
@@ -192,8 +199,13 @@ footer .attribution {
   text-align: center;
   padding: 0.8em;
 }
-footer .attribution a {
+footer .attribution, footer .attribution a {
   color: #48556a;
+}
+footer .attribution a:hover,
+footer .attribution a:focus,
+footer .attribution a:active {
+  color: #19212e;
 }
 footer .attribution span {
   display: block;
