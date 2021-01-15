@@ -118,9 +118,8 @@ input:focus {
     background-image: url('../images/bg-pattern-quotation.svg');
     background-color: $color-moderate-violet;
     background-repeat: no-repeat;
-    background-position: right top;
-    background-position-x: 90%;
-    background-size: 80px;
+    background-position: right 20px top;
+    background-size: 100px 100px;
 
     .photo img {
       border: 2px solid hsla(0, 0%, 81%, 0.5);
@@ -198,7 +197,6 @@ input:focus {
   // Beginning of third card modifier
   &--fourth {
     background-color: $color-very-dark-blackish-blue;
-    margin-bottom: 0;
 
     .photo img {
       border: 2px solid $color-moderate-violet;
@@ -278,4 +276,104 @@ footer {
   .attribution span + span {
      margin-top: 0;
   }
+}
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 6em 2em 6em;
+  }
+
+  .testimonial-outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 80%;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 6em 2em 6em;
+  }
+
+  .testimonial-outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 80%;
+  }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 7em 3.5em 2em 3.5em;
+}
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
 }

@@ -95,9 +95,8 @@ input:focus {
   background-image: url("../images/bg-pattern-quotation.svg");
   background-color: #7541c8;
   background-repeat: no-repeat;
-  background-position: right top;
-  background-position-x: 90%;
-  background-size: 80px;
+  background-position: right 20px top;
+  background-size: 100px 100px;
 }
 .testimonial-card--first .photo img {
   border: 2px solid rgba(207, 207, 207, 0.5);
@@ -152,7 +151,6 @@ input:focus {
 }
 .testimonial-card--fourth {
   background-color: #19212e;
-  margin-bottom: 0;
 }
 .testimonial-card--fourth .photo img {
   border: 2px solid #7541c8;
@@ -213,5 +211,73 @@ footer .attribution span {
 footer .attribution span + span {
   margin-top: 0;
 }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 6em 2em 6em;
+  }
+
+  .testimonial-outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 80%;
+  }
+}
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 6em 2em 6em;
+  }
+
+  .testimonial-outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 80%;
+  }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 7em 3.5em 2em 3.5em;
+  }
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
 /*# sourceMappingURL=styles.css.map */
