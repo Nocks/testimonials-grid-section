@@ -220,6 +220,42 @@ footer .attribution span + span {
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 6em 3em 3em 3em;
+  }
+  .container .testimonial-outer-wrapper {
+    display: flex;
+  }
+  .container__inner-first {
+    flex-basis: 77%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container__inner-second {
+    flex-basis: 23%;
+    display: flex;
+    align-items: stretch;
+    margin-left: 2em;
+  }
+  .container .testimonial-card {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container .testimonial-outer-wrapper--top .testimonial-card--first {
+    margin-right: 2em;
+    background-position: right 70px top;
+    background-size: 100px 107px;
+  }
+  .container .testimonial-outer-wrapper--bottom {
+    margin-top: 2em;
+  }
+  .container .testimonial-outer-wrapper--bottom .testimonial-card--third {
+    margin-right: 2em;
+  }
+}
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
